@@ -15,7 +15,7 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -31,25 +31,32 @@
             </div>
            
             <div class="card">
-                <form action="">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
 
                     <h2>Get more infos by joining the newsletter</h2>
                     <label class="input">
-                        <input class="input__field" type="email" placeholder=" " />
-                        <span class="input__label">Email address</span>
+                        <input class="input__field" type="email" placeholder="Email address" id="email" required/>
                     </label>
 
                     <div class="button-group">
-                        <button>Send</button>
+                        <button id="submit">Send</button>
                     </div>
                 </form>
             </div>
         </section>
 
         <section id="About" class="about">
-
+            <h2 class="about-title">Learn to meditate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EwQkfoKxRvo" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </section>
 
+        <section id="Services" class="services">
+
+        </section>
     </main>
 
 </body>

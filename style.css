@@ -48,8 +48,8 @@ html{
 body{
     font-family: 'Karla', sans-serif;
     font-size: 1.8rem;
-    margin: 2rem;
-    border: .1rem solid var(--main-color);
+    /* margin: 2rem;
+    border: .1rem solid var(--main-color); */
     box-shadow: .3rem .3rem 3px  var(--tertiary-color);
 }
 
@@ -63,6 +63,10 @@ a{
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex; 
     background-color: var(--secondary-color);
     padding: .5rem 6rem;
@@ -167,21 +171,6 @@ header {
     position: relative;
 }
 
-.input__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
-    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
-    background: pink;
-    white-space: nowrap;
-    transform: translate(0, 0);
-    transform-origin: 0 0;
-    background: var(--color-background);
-    transition: transform 120ms ease-in;
-    font-style: italic;
-    line-height: 1;
-}
 .input__field {
     box-sizing: border-box;
     display: block;
@@ -192,18 +181,7 @@ header {
     background: transparent;
     border-radius: var(--size-radius);
   }
-.input__field:not(:-moz-placeholder-shown) + .input__label {
-    transform: translate(0.25rem, -95%) scale(0.8);
-    color: var(--tertiary-color);
-  }
-.input__field:not(:-ms-input-placeholder) + .input__label {
-    transform: translate(0.25rem, -95%) scale(0.8);
-    color: var(--tertiary-color);
-  }
-.input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
-    transform: translate(0.25rem, -95%) scale(0.8);
-    color: var(--tertiary-color);
-  }
+
 
   
 .button-group {
@@ -220,12 +198,29 @@ button {
 }
 
 .about{
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+    align-items: center;
     aspect-ratio: 960/540;
     background-image: url('wave2.svg');
     background-repeat: no-repeat;
     background-position:center ;
-    background-size: cover;
-    
+    background-size: cover;   
     width: 100%;
     height: 100vh;
+}
+
+.about-title {
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 2.5;
+    margin: 2rem;
+    color: var(--main-color);
+    text-shadow: .1rem .1rem var(--tertiary-color);
+}
+
+.services {
+    height: 100vh;
+    background-color: var(--secondary-color);
 }
