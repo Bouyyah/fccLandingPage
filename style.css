@@ -200,7 +200,7 @@ button {
 .about{
     display: flex;
     flex-direction: column;
-     justify-content: center; 
+    justify-content: center; 
     align-items: center;
     aspect-ratio: 960/540;
     background-image: url('wave2.svg');
@@ -211,7 +211,8 @@ button {
     height: 100vh;
 }
 
-.about-title {
+.about-title,
+.services-title {
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 2.5;
@@ -223,4 +224,15 @@ button {
 .services {
     height: 100vh;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 4rem;
 }
